@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/server.ts",
+      "src": "src/index.ts",
       "use": "@vercel/node"
     }
   ],
@@ -11,9 +11,5 @@
       "src": "/api/(.*)",
       "dest": "src/server.ts"
     }
-  ],
-  "env": {
-    "MONGO_URI": "@mongo_uri",
-    "JWT_SECRET": "@jwt_secret"
-  }
+  ]
 }
